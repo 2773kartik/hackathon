@@ -19,10 +19,18 @@
   },
   "homepage": "https://github.com/2773kartik/hackathon#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
     "config": "^3.3.9",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mongoose": "^7.6.3"
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.3",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "validator": "^13.11.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
