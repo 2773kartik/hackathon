@@ -1,0 +1,30 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "IIT Ropar Hackathon",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2773kartik/hackathon.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2773kartik/hackathon/issues"
+  },
+  "homepage": "https://github.com/2773kartik/hackathon#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
