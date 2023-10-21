@@ -9,6 +9,25 @@ const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/user");
 
+
+router.get("/all", (req, res) => {
+    User.find()
+        .then(users => res.json(users))
+        .catch(err => res.status(404).json({ nousersfound: "No users found" }));
+});
+
+router.post("/crush", (req, res) => {
+    console.log(req.body);
+    const crush = req.body.crush;
+    User.findById(req.body.id)
+        .then(user => {
+            user.crush = crush;
+            user.save()
+                .then(() => res.json({ success: true }))
+                .catch(err => console.log(err));
+        })
+        .catch(err => console.log(err));
+});
 // @route POST api/users/register
 // @desc Register user
 // @access Public
